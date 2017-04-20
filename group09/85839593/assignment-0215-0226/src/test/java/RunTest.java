@@ -20,6 +20,14 @@ public class RunTest {
 
     }
     @org.junit.Test
+    public void x() throws Exception {
+
+        System.out.println("啊".getBytes().length);
+        System.out.println("啊".getBytes("gbk").length);
+        System.out.println(new String("啊".getBytes("gbk")));
+
+    }
+    @org.junit.Test
     public void readFile(){
         try {
             InputStream csvOriInputStream = new FileInputStream("C:\\Users\\Administrator\\Downloads\\10019_1_20160530_2030.txt");
